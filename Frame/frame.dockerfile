@@ -3,7 +3,7 @@ LABEL Admin="danielfink36@gmail.com"
 
 RUN mkdir -p flex/frame \
 && mkdir -p flex/build_plans
-WORKDIR /home
+WORKDIR /flex
 
 RUN apt-get update -y \
 && apt-get install vim -y \
