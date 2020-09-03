@@ -1,7 +1,8 @@
 FROM python:buster
 LABEL Admin="danielfink36@gmail.com"
 
-RUN mkdir -p flex/frame
+RUN mkdir -p flex/frame \
+&& mkdir -p flex/build_plans
 WORKDIR /home
 
 RUN apt-get update -y \
