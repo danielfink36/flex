@@ -3,6 +3,7 @@ LABEL Admin="danielfink36@gmail.com"
 
 RUN mkdir -p flex/frame \
 && mkdir -p flex/build_plans
+COPY ./build_plans flex/build_plans
 WORKDIR /flex
 
 RUN apt-get update -y \
